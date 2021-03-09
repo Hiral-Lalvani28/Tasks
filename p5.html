@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            @media screen and (min-width: 0px) and (max-width: 400px) {
+                #my-content { display: none; } 
+                #togglebt{display: block;}
+                
+            }
+
+            @media screen and (min-width: 401px) and (max-width: 1024px) {
+                    #my-content { display: block; } 
+                    #togglebt{display: none;}
+                    
+            }
+            
+        </style>
+        <script>
+            $(document).ready(function(){
+            $("#togglebt").click(function(){
+            $("#my-content").toggle();
+            });
+        });
+        </script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="togglebt">click</div>
+        <div id="my-content">
+        <div class="col-3" style="background-color: lightgray;">
+            <div style="text-align: center;"><span class="dot"></span></div>
+            <h1 style="text-align: center;">Brand Name</h1>
+            <hr>
+            <ul>
+                <li>Menu Item1</li>
+                <li>Menu Item1</li>
+                <li>Menu Item1</li>
+                <li>Menu Item1</li>
+            </ul>
+        </div>
+        </div>
+    </body>
+</html>
