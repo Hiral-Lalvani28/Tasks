@@ -1,0 +1,35 @@
+        
+        .col-3 {width: 25%; height: 655px;}
+        
+        @media only screen and (max-width: 768px) {
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+        body
+        {
+            margin:0px;
+            padding: 0px;
+        }
+        * 
+        {
+            box-sizing: border-box;
+        }
+        [class*="col-"] {
+                float: left;
+                padding: 15px;
+        }
+        .dot {
+            height: 210px;
+            width: 210px;
+            background-color:white;
+            border-radius: 50%;
+            display: inline-block;
+          }
+          ul
+          {
+            list-style: none;
+            font-size: 20px;
+            line-height: 2em;
+          }
+        
